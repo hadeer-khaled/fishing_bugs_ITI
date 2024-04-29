@@ -3,7 +3,8 @@ class AuthorsController < ApplicationController
 
   # GET /authors or /authors.json
   def index
-    @authors = Author.find(params[:id])
+    # @authors = Author.find(params[:id])
+    @authors = Author.all
   end
 
   # GET /authors/1 or /authors/1.json
